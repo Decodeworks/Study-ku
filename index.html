@@ -213,7 +213,7 @@
 
   <script>
     function changeBorderColor(color, element) {
-      document.querySelector('.modal-content').style.border = `2px solid ${color}`;
+      document.querySelector('.modal-content').style.border = `1px solid ${color}`;
       document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('selected-dot'));
       element.classList.add('selected-dot');
     }
