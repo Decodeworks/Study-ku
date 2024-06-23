@@ -30,7 +30,7 @@
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
-      max-width: 700px;
+      max-width: 500px;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       animation-name: modalopen;
@@ -79,7 +79,7 @@
             <li><a href="frontpage.html">HOME</a></li>
             <li><a href="#about" id="aboutLink">ABOUT</a></li>
             <li><a href="#">COURSE</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#contact" id="contactLink">CONTACT</a></li>
           </ul>
         </div>
         <div class="logo">
@@ -182,6 +182,39 @@
   </div>
     </div>
   </div>
+  <!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContact()">&times;</span>
+    <p style="color: whitesmoke; margin-top: 60px;">We value feedback and prioritize clear communication always.</p>
+    <div style="display: flex; justify-content: space-between; align-items: center;" class="row">
+      
+      <div class="col">
+        <p style="color: white; margin-top: 23px; font-family: 'Poppins', sans-serif;">
+          Google forms<br> <a style="color: white;" href="https://docs.google.com/forms/d/e/1FAIpQLSeqSpFVU3vScsDMiQ76A8x2CtfeDVxUK_JtwFvcDff_C6N0xw/viewform?usp=sf_link" target="_blank">Redirect</a>.
+
+      </div>
+      <div class="col">
+        <p style="color: white; margin-top: 26px; font-family: 'Poppins', sans-serif;">
+          Watsapp<br> <a style="color: white;" href="https://wa.me/9495311044" target="_blank">Redirect</a>.
+
+      </div>
+    </div>
+    
+      
+    </p>      
+    <div style="margin-top: 30px; margin-left: 0px;">
+      <div class="color-dot" style="background-color: red;" onclick="changeBorderColor('red', this)"></div>
+      <div class="color-dot" style="background-color: yellow;" onclick="changeBorderColor('yellow', this)"></div>
+      <div class="color-dot" style="background-color: green;" onclick="changeBorderColor('green', this)"></div>
+      <div class="color-dot" style="background-color: blue;" onclick="changeBorderColor('blue', this)"></div>
+      <div class="color-dot" style="background-color: violet;" onclick="changeBorderColor('violet', this)"></div>
+      <div class="color-dot" style="background-color: pink;" onclick="changeBorderColor('pink', this)"></div>
+    </div>
+  </div>
+</div>
+
+  
   
   
 
@@ -214,7 +247,7 @@
 
   <script>
     function changeBorderColor(color, element) {
-      document.querySelector('.modal-content').style.border = `1px solid ${color}`;
+      document.querySelector('#aboutModal .modal-content').style.border = `1px solid ${color}`;
       document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('selected-dot'));
       element.classList.add('selected-dot');
     }
@@ -231,6 +264,25 @@
     function closeModal() {
       document.getElementById('aboutModal').style.display = 'none';
     }
+    function changeBorderColor(color, element) {
+      document.querySelector('#contactModal .modal-content').style.border = `1px solid ${color}`;
+      document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('selected-dot'));
+      element.classList.add('selected-dot');
+    }
+     
+    document.getElementById('contactLink').addEventListener('click', function(event) {
+    event.preventDefault();
+     openContact();
+    });
+
+    function openContact() {
+   document.getElementById('contactModal').style.display = 'block';
+    }
+
+    function closeContact() {
+    document.getElementById('contactModal').style.display = 'none';
+    }
+
   </script>
 </body>
 </html>
