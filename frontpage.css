@@ -428,7 +428,7 @@ top-section .container img{
 .contain p{
     width: clamp(50px,36%,130px);
     height: 27px;
-    font-size: clamp(8px,5vw,8px);
+    font-size: clamp(9px,5vw,8px);
     align-self: center;
     margin-left: 100px;
     padding-left: 14px;
@@ -661,12 +661,12 @@ footer{
         font-weight: 400;
     }
     .contain p{
-        width: clamp(50px,36%,130px);
+        width: clamp(120px,36%,160px);
         height: 27px;
-        font-size: clamp(8px,5vw,8px);
+        font-size: clamp(9px,5vw,8px);
         align-self: center;
         margin-left: 100px;
-        padding-left: 14px;
+        padding-left: 16px;
         padding-top: 8px;
     }
     .para{
@@ -882,7 +882,7 @@ footer{
         margin-top: -30px;
     }
     .contain{
-        display: grid;
+       display: grid;
         margin-top: 40px;
         max-width:100%;
         margin-left: -20px;
@@ -900,12 +900,12 @@ footer{
         font-weight: 400;
     }
     .contain p{
-        width: clamp(50px,36%,130px);
+        width: clamp(120px,36%,160px);
         height: 27px;
-        font-size: clamp(8px,5vw,8px);
+        font-size: clamp(9px,5vw,8px);
         align-self: center;
         margin-left: 100px;
-        padding-left: 15px;
+        padding-left: 16px;
         padding-top: 8px;
     }
     .para{
