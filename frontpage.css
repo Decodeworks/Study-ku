@@ -408,6 +408,7 @@ top-section .container img{
     margin-top: -25px;
 }
 .contain{
+    display: grid;
     margin-top: 70px;
     max-width:100%;
     margin-left: -10px;
@@ -425,13 +426,13 @@ top-section .container img{
     font-weight: 400;
 }
 .contain p{
-    width: clamp(110px,36%,130px);
-    height: 25px;
-    font-size: clamp(4px,5vw,8px);
+    width: clamp(50px,36%,130px);
+    height: 27px;
+    font-size: clamp(8px,5vw,8px);
     align-items: center;
-    margin-left: 75px;
-    padding-left: 17px;
-    padding-top: 6px;
+    margin-left: 100px;
+    padding-left: 14px;
+    padding-top: 8px;
 }
 .para{
     margin-left: -75px;
@@ -642,7 +643,7 @@ footer{
         margin-top: -30px;
     }
     .contain{
-        display: non;
+        display: f;
         margin-top: 40px;
         max-width:100%;
         margin-left: -30px;
@@ -663,9 +664,9 @@ footer{
         width: clamp(50px,36%,130px);
         height: 27px;
         font-size: clamp(8px,5vw,8px);
-        align-items: center;
+        align-self: center;
         margin-left: 100px;
-        padding-left: 22px;
+        padding-left: 14px;
         padding-top: 8px;
     }
     .para{
@@ -881,7 +882,7 @@ footer{
         margin-top: -30px;
     }
     .contain{
-        display: non;
+       display: grid;
         margin-top: 40px;
         max-width:100%;
         margin-left: -20px;
@@ -902,9 +903,9 @@ footer{
         width: clamp(50px,36%,130px);
         height: 27px;
         font-size: clamp(8px,5vw,8px);
-        align-items: center;
+        align-self: center;
         margin-left: 100px;
-        padding-left: 22px;
+        padding-left: 15px;
         padding-top: 8px;
     }
     .para{
