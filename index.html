@@ -207,9 +207,7 @@
       <div class="color-dot" style="background-color: red;" onclick="changeBorderColor('red', this)"></div>
       <div class="color-dot" style="background-color: yellow;" onclick="changeBorderColor('yellow', this)"></div>
       <div class="color-dot" style="background-color: green;" onclick="changeBorderColor('green', this)"></div>
-      <div class="color-dot" style="background-color: blue;" onclick="changeBorderColor('blue', this)"></div>
-      <div class="color-dot" style="background-color: violet;" onclick="changeBorderColor('violet', this)"></div>
-      <div class="color-dot" style="background-color: pink;" onclick="changeBorderColor('pink', this)"></div>
+      
     </div>
   </div>
 </div>
@@ -264,12 +262,7 @@
     function closeModal() {
       document.getElementById('aboutModal').style.display = 'none';
     }
-    function changeBorderColor(color, element) {
-      document.querySelector('#contactModal .modal-content').style.border = `1px solid ${color}`;
-      document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('selected-dot'));
-      element.classList.add('selected-dot');
-    }
-     
+    
     document.getElementById('contactLink').addEventListener('click', function(event) {
     event.preventDefault();
      openContact();
